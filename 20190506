@@ -4,3 +4,6 @@
 我安装了xcode的9.2版本，这个有点老其实。
 Mac系统是10.12.6。这个也很老了。
 podfile 这里面上来就是ios的版本信息。
+
+pod install：根据.lock文件安装
+pod update：这会导致版本不一样的巨大问题
