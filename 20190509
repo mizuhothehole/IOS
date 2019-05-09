@@ -35,3 +35,6 @@ Alamofire.request("https://www.myserver.com/api/login", method: .post, parameter
 
 JDBCデータベースと連携
 https://blog.csdn.net/Leezitao/article/details/78529355
+
+Swift的final变量，意思是此变量不能被override
+Swift的static变量，即使是在自己类里，访问也要加上类名前缀。
