@@ -32,3 +32,6 @@ Using Alamofire:
 
 let parameters = ["name": "username", "password": "password123"]
 Alamofire.request("https://www.myserver.com/api/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody)
+
+JDBCデータベースと連携
+https://blog.csdn.net/Leezitao/article/details/78529355
