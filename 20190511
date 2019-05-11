@@ -1,0 +1,17 @@
+func HttpRequest() {
+        let url = "URLをいれてね"
+        let headers: HTTPHeaders = [ 
+            "Contenttype": "application/json"
+        ]
+        let parameters:[String: Any] = [
+            "username": username,
+            "password": password
+        ]
+
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+            if let result = response.result.value as? [String: Any] {
+                print(result)
+            }
+        }
+
+    }
