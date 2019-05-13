@@ -1,0 +1,28 @@
+因为xserver支持php7.x，mysql5.7.x以及server使用的是nginx，因此在本机开发环境上模拟了如下环境。
+后期准备把java servlet上的逻辑统一移植到nginx以及php上面。DB和Sql不变动。
+后台用php来实现一个restful API。
+
+IOS用日本的代理服务器xserver做后台，配置nginx和php：
+
+brew services start php71 
+brew services stop php71 
+
+/usr/local/etc/nginx/nginx.conf      nginx的配置文件
+/usr/local/opt/nginx/bin/nginx       nginx的bin文件
+/usr/local/opt/php@7.1               php的安装目录
+/usr/local/opt/php@7.1/homebrew.mxcl.php@7.1.plist         php-fpm的配置文件
+launchctl load -w /usr/local/opt/php@7.1/homebrew.mxcl.php@7.1.plist         这个是nginx和php通讯必须的
+launchctl unload -w /usr/local/opt/php@7.1/homebrew.mxcl.php@7.1.plist       这个是解除通讯的
+
+/usr/local/var/www   这个是默认的放置php文件的地方
+
+出现下面的错误的时候：
+
+file_not_found error:
+
+nginx.conf -> $document_root$fastcgi_script_name
+
+finally:
+http://localhost:8080/index.php
+
+Success!!!
