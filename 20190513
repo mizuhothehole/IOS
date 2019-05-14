@@ -38,3 +38,7 @@ php
 我今天把java的app成功移行到了php上。而且用php访问mysql是简单又方便。
 里面有类似phppreparedstatement的东西
 ，返回值是true到话代表的是执行成功了。
+
+可以运行debug程序在真的机器上。
+https://stackoverflow.com/questions/12657651/connect-device-to-mac-localhost-server
+上面是在说明，可以用device连接电脑，访问localhost
