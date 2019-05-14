@@ -32,3 +32,9 @@ http://www.w3school.com.cn/php/php_mysql_connect.asp
 
 如何从JSON里面取数据，并且插入到MySQL数据库：
 https://www.runoob.com/w3cnote/php-receive-json-data.html
+
+php
+
+我今天把java的app成功移行到了php上。而且用php访问mysql是简单又方便。
+里面有类似phppreparedstatement的东西
+，返回值是true到话代表的是执行成功了。
