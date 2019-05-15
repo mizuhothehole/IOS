@@ -40,6 +40,13 @@ php
 ，返回值是true到话代表的是执行成功了。
 
 可以运行debug程序在真的机器上。
+➡️补充说明。Xcode里面不是所有的device想跑debug程序就能跑的。必须在这个文件夹的下面：
+/Users/xxx/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
+有对应版本的包才行。
+我尝试从这个git上面下载了：
+https://github.com/filsv/iPhoneOSDeviceSupport
+目前正在测试中。
+
 https://stackoverflow.com/questions/12657651/connect-device-to-mac-localhost-server
 上面是在说明，可以用device连接电脑，访问localhost
 device上准备打开一个录制视频用的preview，然后录制结束之后放在相册，然后通过
