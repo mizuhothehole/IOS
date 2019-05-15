@@ -46,6 +46,10 @@ php
 我尝试从这个git上面下载了：
 https://github.com/filsv/iPhoneOSDeviceSupport
 目前正在测试中。
+➡️
+然后又出来一个这个：
+xxxx busy: Preparing debugger support for xxxx
+然后我重启了iphone，然后关闭了iTunes，最后又重启了Xcode。这下子就终于好用了。
 
 https://stackoverflow.com/questions/12657651/connect-device-to-mac-localhost-server
 上面是在说明，可以用device连接电脑，访问localhost
