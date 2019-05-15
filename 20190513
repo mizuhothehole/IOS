@@ -42,3 +42,7 @@ php
 可以运行debug程序在真的机器上。
 https://stackoverflow.com/questions/12657651/connect-device-to-mac-localhost-server
 上面是在说明，可以用device连接电脑，访问localhost
+device上准备打开一个录制视频用的preview，然后录制结束之后放在相册，然后通过
+php里面file接受功能，把录制的文件传输上去。
+那么这些文件怎么管理呢？总之先传上去再说。这个需要一个单独的php文件
+以及swift上面的摄像以及保存数据，上传功能。
