@@ -50,6 +50,12 @@ https://github.com/filsv/iPhoneOSDeviceSupport
 然后又出来一个这个：
 xxxx busy: Preparing debugger support for xxxx
 然后我重启了iphone，然后关闭了iTunes，最后又重启了Xcode。这下子就终于好用了。
+➡️然后要给你的debug用软件添加信赖了：
+设定，一般，profile和device管理，developer APP
+点击安装的开发版APP，然后点信赖。这下才可以运行当前的APP
+➡️链接MacBook的本机网络：在Macbook上，点击system preferences，再点击共有，里面有computer名。这个就是你软件代码里面的domain。
+不过一定不要忘记了添加http://这个开头。
+好了，终于可以在真机上进行调试工作了。
 
 https://stackoverflow.com/questions/12657651/connect-device-to-mac-localhost-server
 上面是在说明，可以用device连接电脑，访问localhost
