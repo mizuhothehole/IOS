@@ -20,3 +20,15 @@ avcapturepreview
 issue：
 1.长视频传不上去
 2.视频文件夹没任何控制
+
+NSString *tmpDirPath = NSTemporaryDirectory();
+这个是tmp文件夹。app关闭之后里面的文件有可能会被删除。
+暂时准备使用此文件夹用来暂时存储视频文件。
+1.存储之前清空此文件夹下upload目录
+2.如果不存在，则建立upload目录
+3.写文件到upload目录
+4.上传
+5.成功与否，等response回来，都情况upload文件夹。
+
+功能类：NSFileManager
+
