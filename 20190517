@@ -28,7 +28,7 @@ NSString *tmpDirPath = NSTemporaryDirectory();
 2.如果不存在，则建立upload目录
 3.写文件到upload目录
 4.上传
-5.成功与否，等response回来，都情况upload文件夹。
+5.成功与否，等response回来，都清空upload文件夹。
 
 功能类：NSFileManager
 
