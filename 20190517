@@ -53,7 +53,8 @@ NSString *tmpDirPath = NSTemporaryDirectory();
         }
 
 --------------------- 
-作者：antu58 
-来源：CSDN 
 原文：https://blog.csdn.net/weixin_41735943/article/details/81218065 
-版权声明：本文为博主原创文章，转载请附上博文链接！
+
+➡️我前面想传大的视频传不上去。后来看了看报错，发现下面这个报错了：
+POST Content-Length of 12867715 bytes exceeds the limit of 8388608 bytes
+这个是php的报错。默认最大传送的是8M。所以要改动php.ini
