@@ -1,0 +1,22 @@
+使用下面代码可以删除文件。
+let fileManager = FileManager.default
+let myDirectory = NSHomeDirectory() + "/Documents/Files"
+let fileArray = fileManager.subpaths(atPath:myDirectory)
+for fn in fileArray!{
+    try! fileManager.removeItem(myDirectory + "/\(fn)")
+}
+
+更详细的解释：
+https://www.cnblogs.com/hero11223/p/5689074.html
+
+下面几个类可以实现录像
+avcapturefileoutput
+avcapturesession
+avcapturepreview
+把第一个类指定到第二个类里
+然后用第一个类进行文件存储
+.mov格式目测可存
+
+issue：
+1.长视频传不上去
+2.视频文件夹没任何控制
