@@ -32,3 +32,28 @@ NSString *tmpDirPath = NSTemporaryDirectory();
 
 功能类：NSFileManager
 
+下面这个大哥好像很靠谱：
+获得文件管理对象，它的主要功能包括文件中写入数据，删除或者复制文件，移动文件，比较两个文件的内容或者测试文件的存在性等
+        let manager = FileManager.default
+//        创建一个字符串对象，该字符串对象表示文档目录下的一个文件夹
+        let baseUrl = NSHomeDirectory() + "/Documents/txtFoldet"
+//        使用文件管理对象，判断文件夹是否存在，并把结果储存在常量中
+        let exist = manager.fileExists(atPath: baseUrl)
+//        如果文件夹不存在，则执行之后的代码
+        if !exist
+        {
+            do{
+//                创建指定位置上的文件夹
+                try manager.createDirectory(atPath: baseUrl, withIntermediateDirectories: true, attributes: nil)
+                print("Succes to create folder")
+            }
+            catch{
+                print("Error to create folder")
+            }
+        }
+
+--------------------- 
+作者：antu58 
+来源：CSDN 
+原文：https://blog.csdn.net/weixin_41735943/article/details/81218065 
+版权声明：本文为博主原创文章，转载请附上博文链接！
