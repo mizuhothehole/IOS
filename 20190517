@@ -58,3 +58,10 @@ NSString *tmpDirPath = NSTemporaryDirectory();
 ➡️我前面想传大的视频传不上去。后来看了看报错，发现下面这个报错了：
 POST Content-Length of 12867715 bytes exceeds the limit of 8388608 bytes
 这个是php的报错。默认最大传送的是8M。所以要改动php.ini
+php.ini里面要改动两个地方。
+post_max_size以及upload_max_size
+我昨天分别改造成了50M大小。发现完全够iPhone上传10s左右的短视频。
+
+😀今天和明天，我可能除了这个功能之外，还需要一个下载的功能。
+https://blog.csdn.net/u010427874/article/details/82116725
+这个先看看可不可以把文件下载下来。能下载的话说明这个URL是可以用的。
