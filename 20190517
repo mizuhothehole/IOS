@@ -72,4 +72,31 @@ avplayer和avkit以及avfoundation可以实现播放功能。这个属于iOS原�
 播放功能了。
 
 https://blog.csdn.net/weixin_42779997/article/details/88221615
-这个是用来
+这个是用来播放本地视频的。
+. Code
+Open your View Controller and write this code.
+
+import UIKit
+import AVKit
+import AVFoundation
+
+class ViewController: UIViewController {
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        playVideo()
+    }
+
+    private func playVideo() {
+        guard let path = Bundle.main.path(forResource: "video", ofType:"m4v") else {
+            debugPrint("video.m4v not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
+    }
+}
