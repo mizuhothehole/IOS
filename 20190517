@@ -65,3 +65,11 @@ post_max_size以及upload_max_size
 😀今天和明天，我可能除了这个功能之外，还需要一个下载的功能。
 https://blog.csdn.net/u010427874/article/details/82116725
 这个先看看可不可以把文件下载下来。能下载的话说明这个URL是可以用的。
+
+昨天通过alamoxxx的下载 download方法，可以把远程视频下载到本地的temp
+文件夹之下。后面就是如何来进行播放了。
+avplayer和avkit以及avfoundation可以实现播放功能。这个属于iOS原生的
+播放功能了。
+
+https://blog.csdn.net/weixin_42779997/article/details/88221615
+这个是用来
