@@ -100,3 +100,9 @@ class ViewController: UIViewController {
         }
     }
 }
+
+⭐️ 这里遇到两个问题。一个是怎么把本地视频做成缩略图。
+另一个是怎么把本地的图片保存起来。
+https://stackoverflow.com/questions/31779150/creating-thumbnail-from-local-video-in-swift
+https://stackoverflow.com/questions/11592313/how-do-i-save-a-uiimage-to-a-file
+最后的构想是用UIImage把缩略图给表现出来。
