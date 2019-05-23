@@ -106,3 +106,5 @@ class ViewController: UIViewController {
 https://stackoverflow.com/questions/31779150/creating-thumbnail-from-local-video-in-swift
 https://stackoverflow.com/questions/11592313/how-do-i-save-a-uiimage-to-a-file
 最后的构想是用UIImage把缩略图给表现出来。
+最后是显示出来
+https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
