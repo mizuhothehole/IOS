@@ -108,3 +108,10 @@ https://stackoverflow.com/questions/11592313/how-do-i-save-a-uiimage-to-a-file
 最后的构想是用UIImage把缩略图给表现出来。
 最后是显示出来
 https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
+
+客户要我传输30秒视频。文件会变到30M B大小。于是需要压缩一下。
+客户端：
+https://blog.csdn.net/weixin_33728268/article/details/87326666
+服务器端就放置压缩文件就好了。
+
+另外一个是要设计一个mypoint画面。
