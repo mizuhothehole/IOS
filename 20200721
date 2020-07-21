@@ -1,0 +1,41 @@
+Basics of swift
+
+1.Class and function
+
+class Myclass { 
+    
+    var localVar : Int;
+    
+    init() {
+        self.localVar = 22;
+    }
+    
+    init(param : Int = 1) {
+      self.localVar = param;
+    }
+    
+    func myFunc(param : String) -> String {
+      return param;
+    }
+}
+
+And here is how to construct the class:
+var myclass = Myclass(222);
+
+2.inheritance and override
+
+class Child : MyClass {
+    override myFunc(param : String) -> String {
+      return "this method is overrided";
+    }
+}
+
+3.constant and variable
+
+constant -> let
+variable -> var
+
+4.out put log
+
+print("this is a test log to be output")
+
