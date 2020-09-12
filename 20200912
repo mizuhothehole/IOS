@@ -1,0 +1,65 @@
+初めてのobjective-c
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    Constants *c = [Constants new];
+    [c echo];
+    
+    Constants *clike = [[Constants alloc] init];
+    [clike echo];
+    c = NULL;
+    clike = NULL;
+};
+
+//
+//  Constants.m
+//  日本語学習アプリ
+//
+//  Created by shin on 2020/09/12.
+//  Copyright © 2020年 hata. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#import "Constants.h"
+
+@implementation Constants
+
+-(void)echo {
+    self.word1 = @"日本語アプリ";
+    self.version = 1;
+    self.bestJapaneseWordToday = @"どもる。どどどどどどもる";
+    self.bestJapaneseWordToday1 = @"失敗る。。しくじ、しくじ、しくじじじじじじじる";
+    printf("%s", [self.word1 UTF8String]);
+    printf("%lu", (unsigned long)self.version);
+    printf("%s", [self.bestJapaneseWordToday UTF8String]);
+    printf("%s", [self.bestJapaneseWordToday1 UTF8String]);
+}
+@end
+
+
+//
+//  Constants.h
+//  日本語学習アプリ
+//
+//  Created by shin on 2020/09/12.
+//  Copyright © 2020年 hata. All rights reserved.
+//
+
+#ifndef Constants_h
+#define Constants_h
+
+
+#endif /* Constants_h */
+
+@interface Constants : NSObject 
+
+@property NSString* word1;
+@property NSUInteger version;
+@property NSString* bestJapaneseWordToday;
+@property NSString* bestJapaneseWordToday1;
+
+- (void)echo;
+
+@end
