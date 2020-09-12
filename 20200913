@@ -1,0 +1,18 @@
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame = CGRectMake(10, 10, 100, 30);
+    [btn setTitle:@"押してね" forState:UIControlStateNormal];
+    [btn setTitle:@"ぽち" forState:UIControlStateHighlighted];
+    [btn setTitle:@"押せません" forState:UIControlStateDisabled];
+    // ボタンがタッチダウンされた時にhogeメソッドを呼び出す
+    [btn addTarget:self action:@selector(hoge:)
+    forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:btn];
+    
+};
+
+-(void)hoge:(UIButton*)button{
+    // ここに何かの処理を記述する
+    // （引数の button には呼び出し元のUIButtonオブジェクトが引き渡されてきます）
+}
