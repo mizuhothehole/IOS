@@ -1,0 +1,13 @@
+Objective-c
+
+内部タイマー処理：
+NSTimer
+
+objective-c
+[NSTimer scheduledTimerWithTimeInterval:0.1
+                                                  target:self
+                                                selector:@selector(time:)
+                                                userInfo:nil
+                                                 repeats:YES];
+-(void)time:(NSTimer*)timer{
+}
