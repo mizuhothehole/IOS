@@ -1,0 +1,33 @@
+//
+//  ViewController.swift
+//  vietnam
+//
+//  Created by shin on 2021/02/03.
+//  Copyright © 2021年 hata. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var btttn: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        _ = super.isEditing
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func ff(_ sender: Any) {
+        NSLog("test test" + btttn.currentTitle!)
+        btttn.setTitle("xxxx", for: UIControlState())
+    }
+}
+
+click right button to set the events.
+like transfer, click event and so on.
