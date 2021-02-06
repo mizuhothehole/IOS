@@ -252,3 +252,8 @@ when use extend without other marks, it means just add the words under the files
   --progressh
   --progresse 
   --progress
+
+Shin:vietnam shin$ ls
+Podfile			Pods			vietnam.xcodeproj
+Podfile.lock		vietnam			vietnam.xcworkspace
+Shin:vietnam shin$ 
