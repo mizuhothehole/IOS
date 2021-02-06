@@ -1,0 +1,240 @@
+Last login: Sat Feb  6 00:20:11 on console
+Shin:~ shin$ sudu gem install cocopads
+-bash: sudu: command not found
+Shin:~ shin$ sudo gem install cocopads
+Password:
+ERROR:  Could not find a valid gem 'cocopads' (>= 0) in any repository
+
+^[[A^CERROR:  Interrupted
+Shin:~ shin$ sudo gem install cocopads
+ERROR:  Could not find a valid gem 'cocopads' (>= 0) in any repository
+^CERROR:  Interrupted
+Shin:~ shin$ sudo gem install cocopods
+ERROR:  Could not find a valid gem 'cocopods' (>= 0) in any repository
+^CERROR:  Interrupted
+Shin:~ shin$ sudo gem install cocoapods
+Fetching: activesupport-5.2.4.4.gem (100%)
+Successfully installed activesupport-5.2.4.4
+Fetching: httpclient-2.8.3.gem (100%)
+Successfully installed httpclient-2.8.3
+Fetching: algoliasearch-1.27.5.gem (100%)
+A new major version is available for Algolia! Please now use the https://rubygems.org/gems/algolia gem to get the latest features.
+Successfully installed algoliasearch-1.27.5
+Fetching: ffi-1.14.2.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing cocoapods:
+	ERROR: Failed to build gem native extension.
+
+    current directory: /Library/Ruby/Gems/2.3.0/gems/ffi-1.14.2/ext/ffi_c
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20210206-836-112telt.rb extconf.rb
+checking for ffi.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/$(RUBY_BASE_NAME)
+	--with-ffi_c-dir
+	--without-ffi_c-dir
+	--with-ffi_c-include
+	--without-ffi_c-include=${ffi_c-dir}/include
+	--with-ffi_c-lib
+	--without-ffi_c-lib=${ffi_c-dir}/lib
+	--enable-system-libffi
+	--disable-system-libffi
+	--with-libffi-config
+	--without-libffi-config
+	--with-pkg-config
+	--without-pkg-config
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:456:in `try_do': The compiler failed to generate an executable file. (RuntimeError)
+You have to install development tools first.
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:571:in `block in try_compile'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:524:in `with_werror'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:571:in `try_compile'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:1091:in `block in have_header'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:942:in `block in checking_for'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:320:in `open'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:350:in `block in postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:320:in `open'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:346:in `postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:941:in `checking_for'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:1090:in `have_header'
+	from extconf.rb:10:in `system_libffi_usable?'
+	from extconf.rb:42:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/ffi-1.14.2/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /Library/Ruby/Gems/2.3.0/gems/ffi-1.14.2 for inspection.
+Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/ffi-1.14.2/gem_make.out
+Shin:~ shin$ gem which cocoapods
+/Library/Ruby/Gems/2.3.0/gems/cocoapods-1.7.0.rc.1/lib/cocoapods.rb
+Shin:~ shin$ sudo gem update cocoapods
+Updating installed gems
+Updating cocoapods
+Building native extensions.  This could take a while...
+ERROR:  Error installing cocoapods:
+	ERROR: Failed to build gem native extension.
+
+    current directory: /Library/Ruby/Gems/2.3.0/gems/ffi-1.14.2/ext/ffi_c
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20210206-854-13xx430.rb extconf.rb
+checking for ffi.h... *** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/$(RUBY_BASE_NAME)
+	--with-ffi_c-dir
+	--without-ffi_c-dir
+	--with-ffi_c-include
+	--without-ffi_c-include=${ffi_c-dir}/include
+	--with-ffi_c-lib
+	--without-ffi_c-lib=${ffi_c-dir}/lib
+	--enable-system-libffi
+	--disable-system-libffi
+	--with-libffi-config
+	--without-libffi-config
+	--with-pkg-config
+	--without-pkg-config
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:456:in `try_do': The compiler failed to generate an executable file. (RuntimeError)
+You have to install development tools first.
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:571:in `block in try_compile'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:524:in `with_werror'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:571:in `try_compile'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:1091:in `block in have_header'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:942:in `block in checking_for'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:350:in `block (2 levels) in postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:320:in `open'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:350:in `block in postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:320:in `open'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:346:in `postpone'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:941:in `checking_for'
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/mkmf.rb:1090:in `have_header'
+	from extconf.rb:10:in `system_libffi_usable?'
+	from extconf.rb:42:in `<main>'
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/ffi-1.14.2/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /Library/Ruby/Gems/2.3.0/gems/ffi-1.14.2 for inspection.
+Results logged to /Library/Ruby/Gems/2.3.0/extensions/universal-darwin-16/2.3.0/ffi-1.14.2/gem_make.out
+Gems updated: ffi
+Gems already up-to-date: cocoapods
+Shin:~ shin$ pod setup
+Setting up CocoaPods master repo
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master fetch origin
+  --progress
+  remote: Enumerating objects: 142742, done.        
+  remote: Counting objects: 100% (142742/142742), done.        
+  remote: Compressing objects: 100% (412/412), done.        
+  remote: Total 1571821 (delta 142460), reused 142382 (delta 142309), pack-reused 1429079
+  Receiving objects: 100% (1571821/1571821), 183.06 MiB | 9.76 MiB/s, done.
+  Resolving deltas: 100% (1085814/1085814), completed with 13584 local objects.
+  From https://github.com/CocoaPods/Specs
+     a057a5e47afc..4d3bd6dbfbb5  master              -> origin/master
+   * [new branch]                amorde/index-script -> origin/amorde/index-script
+   * [new branch]                igor/fix-workflow   -> origin/igor/fix-workflow
+   + 367f450a7bb2...02443419999d indexes             -> origin/indexes  (forced update)
+   * [new branch]                netlify             -> origin/netlify
+   * [new branch]                orta-patch-1        -> origin/orta-patch-1
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master rev-parse
+  --abbrev-ref HEAD
+  master
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master reset --hard
+  origin/master
+  Checking out files: 100% (155877/155877), done.
+  HEAD is now at 4d3bd6dbfbb5 [Add] HttpUtility 1.2.0
+
+CocoaPods 1.10.1 is available.
+To update use: `sudo gem install cocoapods`
+
+For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.10.1
+
+Setup completed
+Shin:~ shin$ cd /Users/ishiiaya/Documents
+Shin:Documents shin$ cd vietnam/
+Shin:vietnam shin$ pod init
+Shin:vietnam shin$ vi Podfile 
+Shin:vietnam shin$ pod install
+Analyzing dependencies
+Downloading dependencies
+Installing AppsFlyerFramework (6.1.4)
+Generating Pods project
+Integrating client project
+
+[!] Please close any current Xcode sessions and use `vietnam.xcworkspace` for this project from now on.
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `11.2` on target `vietnam` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+Shin:vietnam shin$ pod install
+Analyzing dependencies
+Downloading dependencies
+Using AppsFlyerFramework (6.1.4)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `11.2` on target `vietnam` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+Shin:vietnam shin$ pod update
+Update all pods
+Updating local specs repositories
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master fetch origin
+  --progress
+  remote: Enumerating objects: 92, done.        
+  remote: Counting objects: 100% (92/92), done.        
+  remote: Compressing objects: 100% (66/66), done.        
+  remote: Total 72 (delta 48), reused 0 (delta 0), pack-reused 0        
+  From https://github.com/CocoaPods/Specs
+     4d3bd6dbfbb5..9f97f977f3de  master     -> origin/master
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master rev-parse
+  --abbrev-ref HEAD
+  master
+  $ /usr/bin/git -C /Users/ishiiaya/.cocoapods/repos/master reset --hard
+  origin/master
+  HEAD is now at 9f97f977f3de [Add] BmoViewPager 5.1.0
+
+CocoaPods 1.10.1 is available.
+To update use: `sudo gem install cocoapods`
+
+For more information, see https://blog.cocoapods.org and the CHANGELOG for this version at https://github.com/CocoaPods/CocoaPods/releases/tag/1.10.1
+
+Analyzing dependencies
+Downloading dependencies
+Using AppsFlyerFramework (6.1.4)
+Generating Pods project
+Integrating client project
+Sending stats
+Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
+
+[!] Automatically assigning platform `ios` with version `11.2` on target `vietnam` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+Shin:vietnam shin$ 
