@@ -1,3 +1,7 @@
+workspace是一个文档的集合，它可以包括许多个project，并管理着project之间的关系，它为不同project之间的调用提供了解决方法。需要指出的是，workspace在Xcode中以xcworkspace文件形式存在，就是我们使用CocoaPods后的产物。
+
+可以吧project看成一个仓库，用来存放一个项目中所有用到的资源，它能包含多个target，并定义那个target作为最终产品被运行。在Xcode中一个xcodeproj文件就是一个project。认识和理解workspace和project的区别对每个即将进入iOS行业的人来说都非常重要。
+
 Last login: Sat Feb  6 00:20:11 on console
 Shin:~ shin$ sudu gem install cocopads
 -bash: sudu: command not found
