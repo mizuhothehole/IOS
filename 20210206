@@ -238,3 +238,13 @@ Pod installation complete! There is 1 dependency from the Podfile and 1 total po
 
 [!] Automatically assigning platform `ios` with version `11.2` on target `vietnam` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
 Shin:vietnam shin$ 
+
+
+Extension how to understand?
+
+extend?
+when use extend with ":", it means extending.
+when use extend without other marks, it means just add the words under the files.
+  --progressh
+  --progresse 
+  --progress
