@@ -1,0 +1,2 @@
+gem update --system
+use workspcae file rather than the project file of ios project.
