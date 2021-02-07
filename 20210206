@@ -257,3 +257,10 @@ Shin:vietnam shin$ ls
 Podfile			Pods			vietnam.xcodeproj
 Podfile.lock		vietnam			vietnam.xcworkspace
 Shin:vietnam shin$ 
+
+If you create your own .bashrc file make sure that the following line is in your ~/.bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
