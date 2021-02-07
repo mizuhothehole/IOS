@@ -266,3 +266,27 @@ if [ -f ~/.bashrc ]; then
 fi
 
 https://qiita.com/nishina555/items/63ebd4a508a09c481150
+
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'アプリ名' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SampleLocation
+　pod 'SVProgressHUD'
+
+  target 'アプリ名Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'アプリ名UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+it seems there are many kinds of build types in IOS too.
