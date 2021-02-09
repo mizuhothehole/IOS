@@ -150,3 +150,92 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+计算属性
+除存储属性外，类、结构体和枚举可以定义计算属性，计算属性不直接存储值，而是提供一个 getter 来获取值，一个可选的 setter 来间接设置其他属性或变量的值。
+import Cocoa
+
+class sample {
+    var no1 = 0.0, no2 = 0.0
+    var length = 300.0, breadth = 150.0
+    
+    var middle: (Double, Double) {
+        get{
+            return (length / 2, breadth / 2)
+        }
+        set(axis){
+            no1 = axis.0 - (length / 2)
+            no2 = axis.1 - (breadth / 2)
+        }
+    }
+}
+
+var result = sample()
+print(result.middle)
+result.middle = (0.0, 10.0)
+
+print(result.no1)
+print(result.no2)
+以上程序执行输出结果为：
+(150.0, 75.0)
+-150.0
+-65.0
+如果计算属性的 setter 没有定义表示新值的参数名，则可以使用默认名称 newValue。
+只读计算属性
+只有 getter 没有 setter 的计算属性就是只读计算属性。
+只读计算属性总是返回一个值，可以通过点(.)运算符访问，但不能设置新的值。
+import Cocoa
+
+class film {
+    var head = ""
+    var duration = 0.0
+    var metaInfo: [String:String] {
+        return [
+            "head": self.head,
+            "duration":"\(self.duration)"
+        ]
+    }
+}
+
+var movie = film()
+movie.head = "Swift 属性"
+movie.duration = 3.09
+
+print(movie.metaInfo["head"]!)
+print(movie.metaInfo["duration"]!)
+以上程序执行输出结果为：
+Swift 属性
+3.09
+注意：
+必须使用var关键字定义计算属性，包括只读计算属性，因为它们的值不是固定的。let关键字只用来声明常量属性，表示初始化后再也无法修改的值。
+属性观察器
+属性观察器监控和响应属性值的变化，每次属性被设置值的时候都会调用属性观察器，甚至新的值和现在的值相同的时候也不例外。
+可以为除了延迟存储属性之外的其他存储属性添加属性观察器，也可以通过重载属性的方式为继承的属性（包括存储属性和计算属性）添加属性观察器。
+注意：
+不需要为无法重载的计算属性添加属性观察器，因为可以通过 setter 直接监控和响应值的变化。
+可以为属性添加如下的一个或全部观察器：
+willSet在设置新的值之前调用
+didSet在新的值被设置之后立即调用
+willSet和didSet观察器在属性初始化过程中不会被调用
+import Cocoa
+
+class Samplepgm {
+    var counter: Int = 0{
+        willSet(newTotal){
+            print("计数器: \(newTotal)")
+        }
+        didSet{
+            if counter > oldValue {
+                print("新增数 \(counter - oldValue)")
+            }
+        }
+    }
+}
+let NewCounter = Samplepgm()
+NewCounter.counter = 100
+NewCounter.counter = 800
+以上程序执行输出结果为：
+计数器: 100
+新增数 100
+计数器: 800
+新增数 700
