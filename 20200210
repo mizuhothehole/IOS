@@ -1,0 +1,152 @@
+//
+//  ViewController.swift
+//  test
+//
+//  Created by shin on 2021/02/10.
+//  Copyright © 2021年 hata. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        let myint : Int = 111111111111111
+        let myint2 : UInt = 222222222222222
+        let myint44 : UInt8 = 23
+        let myint3 : Int64 = 222222222222222
+        let myintdsadasd : Float = 22222
+        let dsad : UInt64 = 222222222222222
+        let dsaddasd : String = "sdadasd"
+        let dsadddd : Double = 4214
+        
+        print(myint)
+        print(myint2)
+        print(myint44)
+        print(myint3)
+        print(myintdsadasd)
+        print(dsad)
+        print(dsaddasd)
+        print(dsadddd)
+        
+        typealias NewInt = Int
+        let oooo : NewInt = 3123213
+        print(oooo)
+        typealias NewIntII = NewInt
+        let dadadadada : NewIntII = 223445
+        print(dadadadada)
+        let dadadadaddda : NewIntII = 223445
+        for index in 2...4 {
+            print("\(index) 乘于 5 为：\(index * 5)")
+        }
+        var someInts:[Int] = [12220, 20323, 30111, 232323]
+        
+        for index in someInts {
+            print( "index 的值为 \(index)")
+        }
+        
+        var stringB = String("Hello, ssssssss World!")
+        print(stringB + "######")
+        if (!stringB.isEmpty) {
+            print(stringB)
+        }
+
+        let stringB1 = String("菜鸟教程：")
+        stringB += "http://www.runoob.com"
+        print( stringB )
+
+        let constA = "菜鸟教程："
+        let constB = "http://www.runoob.com"
+        
+        var stringA = constA + constB
+        print( stringA )
+        
+        for code in stringA.utf16 {
+            print("\(code) ")
+        }
+        
+        print("UTF-8 编码: ")
+        for code in stringA.utf8 {
+            print("\(code) ")
+        }
+        
+        for code in stringA.characters {
+            print("\(code) ")
+        }
+        
+        var someIntsss = [Int](repeating: 11111, count: 3)
+        var someVar = someIntsss[0]
+        
+        print( "第一个元素的值 \(someVar)" )
+        print( "第二个元素的值 \(someIntsss[1])" )
+        print( "第三个元素的值 \(someIntsss[2])" )
+        
+        var someIntsssssss = [Int]()
+        
+        someIntsssssss.append(20)
+        someIntsssssss.append(30)
+        someIntsssssss += [40]
+        someIntsssssss.append(32323)
+        
+        
+        print( "第一个元素的值 \(someIntsssssss[0])" )
+        print( "第二个元素的值 \(someIntsssssss[1])" )
+        print( "第三个元素的值 \(someIntsssssss[2])" )
+        
+        var someStrsss = [String]()
+        
+        someStrsss.append("Apple")
+        someStrsss.append("Amazon")
+        someStrsss.append("Runoob")
+        someStrsss += ["Google"]
+        
+        for item in someStrsss {
+            print(item)
+        }
+        let iii = someStrsss.count
+        print(iii)
+        
+        var someDict:[Int:String] = [1:"One", 2:"Two", 555:"Three"]
+        // 旧的值会被吐出来
+        var oldVal = someDict.updateValue("cacacacaca", forKey: 1)
+        someDict.removeValue(forKey: 2)
+        print(someDict[2])
+        for (a, v) in someDict {
+            print("字典 key \(a) -  字典 value \(v)")
+        }
+        var someDict1:[Int:String] = [4:"One", 44:"Two", 444:"Three"]
+        var someDict2:[Int:String] = [22:"Four",222:"Five"]
+        
+        print("someDict1 含有 \(someDict1.count) 个键值对")
+        print("someDict2 含有 \(someDict2.count) 个键值对")
+        print("someDict2 含有 \(someDict2.count) 个键值对")
+        
+        print(sitename())
+        print(runoob(name : "AAA", site : "BBB"))
+        print(backwards(s1 : "BBB", s2 : "AAA"))
+        
+        let names = ["AT", "AE", "D", "S", "BE"]
+        var reversed = names.sorted(by: >)
+        print(reversed)
+    }
+
+    func runoob(name: String, site: String) -> String {
+        return name + site
+    }
+    
+    func backwards(s1: String, s2: String) -> Bool {
+        return s1 > s2
+    }
+    
+    func sitename() -> String {
+        return "菜鸟教程"
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
