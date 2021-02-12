@@ -1,0 +1,50 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+enum A {
+    case AAA(String)
+    case BBB(Int,Int,Int)
+    case CCC
+    case DDD
+}
+
+var ss = A.AAA("Runoob")
+
+switch ss {
+case A.AAA(let studName):
+    print("学生的名字是: \(studName)。")
+case A.BBB(let Mark1, let Mark2, let Mark3):
+    print("学生的成绩是: \(Mark1),\(Mark2),\(Mark3)。")
+case A.CCC:
+    break
+case A.DDD:
+    break
+}
+
+class AAAAA {
+    var aa : Int
+    var bb : Int
+    init(){
+        aa = 1
+        bb = 2
+    }
+}
+
+enum TemperatureUnit {
+    // 开尔文，摄氏，华氏
+    case Kelvin, Celsius, Fahrenheit
+    init?(symbol: Character) {
+        switch symbol {
+        case "K":
+            self = .Kelvin
+        case "C":
+            self = .Celsius
+        case "F":
+            self = .Fahrenheit
+        default:
+            return nil
+        }
+    }
+}
