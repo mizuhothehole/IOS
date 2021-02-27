@@ -1,0 +1,47 @@
+//
+//  ViewController.swift
+//  kannkenn
+//
+//  Created by shin on 2021/02/28.
+//  Copyright © 2021年 hata. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet var colll: [UIStackView]!
+    @IBOutlet weak var StackView: UIStackView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        let lable : UILabel = UILabel()
+        lable.backgroundColor = UIColor.gray
+        lable.lineBreakMode = NSLineBreakMode.byCharWrapping
+        lable.text = """
+        大巧　環　躓く　磯 鉈 叢雲　箕　正宗　覆水　屏風　顰　髭　喉元 賑　怒髪　蟷螂
+        """
+        lable.adjustsFontSizeToFitWidth = true
+        lable.textColor = UIColor.black
+        
+        let lable2 : UILabel = UILabel()
+        lable2.backgroundColor = UIColor.gray
+        lable2.lineBreakMode = NSLineBreakMode.byCharWrapping
+        lable2.text = """
+        大巧　環　躓く　磯 鉈 叢雲　箕　正宗　覆水　屏風　顰　髭　喉元 賑　怒髪　蟷螂
+        """
+        lable2.adjustsFontSizeToFitWidth = true
+        lable.textColor = UIColor.black
+        StackView.addArrangedSubview(lable)
+        colll.append(StackView)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+}
+
