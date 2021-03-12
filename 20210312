@@ -1,0 +1,14 @@
+SwiftUI is a new framework from Apple for 
+making user interfaces for Apple devices.
+ SwiftUI does not use view controllers so
+ when you create a SwiftUI project,
+ there aren’t going to be any view 
+controllers in the project.
+
+The solution to the issue is to choose 
+Storyboard from the User Interface menu
+ when you create the project. When you
+ tell Xcode to use storyboards for the 
+user interface, your project will include
+ a view controller and a ViewController.swift 
+file.
