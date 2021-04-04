@@ -1,0 +1,5 @@
+nsoperation
+Nsoperationqueue
+
+这个是iOS的非同期处理的方法
+重写main 和 isconcurrent
