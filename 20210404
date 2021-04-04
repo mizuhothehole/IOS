@@ -28,4 +28,16 @@ class OperationCustom : Operation {
 let customOperationQueue : OperationQueue = OperationQueue.current!
 customOperationQueue.addOperation(OperationCustom())
 
+结果
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+runned in some where
+
 这个会根据operation的优先度之类的有一个执行的顺序，不过它只能最多保证在后台执行，并不能保证完全是按照我们想要的operation顺序进行执行。
