@@ -3,3 +3,27 @@ Nsoperationqueue
 
 这个是iOS的非同期处理的方法
 重写main 和 isconcurrent
+
+定义
+//
+//  File.swift
+//  myApp
+//
+//  Created by shin on 2021/04/05.
+//  Copyright © 2021年 technology. All rights reserved.
+//
+
+import Foundation
+
+class OperationCustom : Operation {
+    @objc override func main() {
+        for _ in 0..<10 {
+            print("runned in some where")
+        }
+    }
+}
+
+
+调用
+let customOperationQueue : OperationQueue = OperationQueue.current!
+customOperationQueue.addOperation(OperationCustom())
