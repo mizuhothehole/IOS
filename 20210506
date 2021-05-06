@@ -1,0 +1,11 @@
+今天我研究了一上午关于iOS的技术
+
+首先有这么几个名词：
+unwind segue：做画面跳转用的。只不过是回跳。还得在跳转目标view controller里面提前定义好。
+segue：画面跳转用
+scene：story board 下面层级。
+view controller：scene 下面层级，可是必须要和某个Swift类绑定好用来做代码实现
+UI layout constraints： 用来做两个UI控件之间的线性对应关系，必须满足线性表达式。可以用IB绑定，做一些业务上的带吗实现
+pin button：用来做各种constraint的定义。Xcode的小功能
+
+感觉这些技术用来应付一些需求足够了。可是细节的东西还是要深入研究一下。
