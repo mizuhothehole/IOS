@@ -1,0 +1,65 @@
+在 UILabel里添加 Hyperlink，最后跳转外部浏览器。带样式
+iOS 11.0以后，支持string带样式 NSMutableAttributedString
+
+//
+//  ViewController.swift
+//  LabelHyperlink
+//
+//  Created by shin on 2021/07/03.
+//  Copyright © 2021年 technology. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var label: UILabel!
+    
+    let linkText = "Hello"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let textFromLocal = NSLocalizedString("local", comment: "")
+        label.isUserInteractionEnabled = true
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        label.addGestureRecognizer(tapGestureRecognizer)
+        
+        // NSAttributedString supported by ios in new versions(iOS 11.0 or later)
+        let string = label!.text!
+        let range = (string as NSString).range(of: linkText)
+        let attributedString = NSMutableAttributedString(string: string)
+        attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.blue, range: range)
+        label.attributedText = attributedString
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+    }
+    
+    @objc func tapGesture(gestureRecognizer: UITapGestureRecognizer) {
+        guard let text = label.text else { return }
+        let touchPoint = gestureRecognizer.location(in: label)
+        let textStorage = NSTextStorage(attributedString: NSAttributedString(string: linkText))
+        let layoutManager = NSLayoutManager()
+        textStorage.addLayoutManager(layoutManager)
+        let textContainer = NSTextContainer(size: label.frame.size)
+        layoutManager.addTextContainer(textContainer)
+        textContainer.lineFragmentPadding = 0
+        let toRange = (text as NSString).range(of: linkText)
+        let glyphRange = layoutManager.glyphRange(forCharacterRange: toRange, actualCharacterRange: nil)
+        let glyphRect = layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer)
+        if glyphRect.contains(touchPoint) {
+            print("Hyperlink Tapped!")
+            if let url = URL(string: "http://www.google.com"), UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url,options: [:], completionHandler: { result in
+                    print(result) // → true
+                    // when failure here will return false
+                })
+            }
+        }
+    }
+}
+
