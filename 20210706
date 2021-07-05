@@ -6,6 +6,8 @@ Xcode里preference里的account就是半天登陆不进去了。
 这个开头的全删除，再重新登录一遍，OK，好用了。编译成功
 
 哎。。客户真的是太任性了。
+客户的需求：在UILabel里面加上个Hyperlink。
+而且这个Label上的Hyperlink，iOS根本就不支持，看着氛围，也没打算支持。
 
 //
 //  ViewController.swift
