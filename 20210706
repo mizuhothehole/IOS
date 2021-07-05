@@ -1,0 +1,6 @@
+今天遇到棘手的一个问题。
+Apple账号改了一次密码（Apple ID的密码规则变了）
+Xcode里preference里的account就是半天登陆不进去了。
+
+突发奇想，去keychain管理里面，把com.apple.gs.appleid.auth
+这个开头的全删除，再重新登录一遍，OK，好用了。编译成功
