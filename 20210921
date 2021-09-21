@@ -1,0 +1,25 @@
+关于unwind segue
+这个很久没用了。最近客户那儿老出问题。
+
+具体用法就是，在要跳回的画面里面先定义一个方法：
+        
+        @IBAction func bluesegue(segue: UIStoryboardSegue) {
+            print(segue.identifier)
+        }
+
+然后点击这个storyboard里面到exit之后，里面会出来它的segue定义bluesegue：
+
+在第二个WebViewController里面的按钮里，control拉一下，拉到第一个（要跳转回的WebViewController）。
+这样的话，就可以搞定跳回的问题。
+
+在segue的定义里面，还可以定义它的identifier。
+这样在回调里就可以监视这个identifier。
+
+下面是实际出来的log
+
+Optional("testidenti")
+Optional("testidenti")
+Optional("testidenti")
+Optional("testidenti")
+Optional("testidenti")
+
