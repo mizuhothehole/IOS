@@ -1,0 +1,12 @@
+https://qiita.com/shindyu/items/10f5ee8d92eea9f80be4
+ios15 ATT 
+
+Add status ckeck and call only after the status of app became UIApplicationStateActive.
+
+func applicationDidBecomeActive(_ application: UIApplication) {
+    if ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
+        ATTrackingManager.requestTrackingAuthorization { _ in }
+    }
+}
+
+Also when multiple pending dialogs showing, not to forget to change the flow, as the may be dialog not shown as expected.
