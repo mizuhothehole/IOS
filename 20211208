@@ -1,0 +1,6 @@
+UIkit：
+UIdisplay：跟实际机器屏幕尺寸一样大
+UIscene：如果支持multiwindow，会有可能有多个。
+appdelegate里面的回调和life circle，都会变成这个view的回调
+UIwindow：一个view controller管理的。跳出来的dialog，也属于这个
+UIview：每一个小的画面部品
